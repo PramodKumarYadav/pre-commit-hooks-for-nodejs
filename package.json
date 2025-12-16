@@ -1,0 +1,32 @@
+{
+  "name": "pre-commit-hooks-for-nodejs",
+  "version": "1.0.0",
+  "description": "A sandbox repository to test pre commit hooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:changed": "playwright test --only-changed",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,json,md}\"",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.50.0",
+    "@typescript-eslint/parser": "^8.50.0",
+    "eslint": "^9.39.2",
+    "eslint-plugin-playwright": "^2.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.50.0"
+  }
+}
